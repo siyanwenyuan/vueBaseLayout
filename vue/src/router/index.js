@@ -24,6 +24,13 @@ const routes = [
     //此处导入Login登录界面
     component: ()=>import("@/views/Login.vue")
   },
+
+  {
+    path: '/register',
+    name: 'Register',
+    //此处导入Login登录界面
+    component: ()=>import("@/views/Register.vue")
+  },
 ]
 
 const router = createRouter({
