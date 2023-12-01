@@ -1,11 +1,28 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from "@/views/Home.vue";
+import Layout from "@/layout/Layout.vue";
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Layout',
+    component: Layout,
+    redirect: "home",  //路由重定向，当访问/时，自动跳转到home
+    //子菜单的路由
+    children: [
+      {
+        path: 'home',
+        name: 'Home',
+        //引入对应的界面
+        component: ()=>import("@/views/Home.vue")
+      }
+    ]
+  },
+
+  {
+    path: '/login',
+    name: 'Login',
+    //此处导入Login登录界面
+    component: ()=>import("@/views/Login.vue")
   },
 ]
 

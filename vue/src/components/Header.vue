@@ -2,7 +2,7 @@
 
   <div style="height: 50px; line-height: 50px;border-bottom: 1px solid #ccc; display: flex">
 
-    <div style="width: 200px; padding-left: 30px;font-weight: bold;">后台管理</div>
+    <div style="width: 200px; padding-left: 30px;font-weight: bold;">厦门亮洁彩</div>
 
     <div style="flex: 1"></div>
 
